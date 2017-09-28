@@ -1,0 +1,97 @@
+*, *::after {
+  box-sizing: border-box; /*-- sets box math for all elements --*/
+}
+body {
+  width: 85%;  /*-- sets width of whole body to 85% --*/
+  margin: 0 auto;  /*-- centers the whole body --*/
+  font-family: 'Montserrat', sans-serif;  /*-- sets font and fallback --*/
+}
+figure {
+  margin: 0 0 1em 0;  /*-- adds bottom margin to figures --*/
+  padding: 0;  /*-- removes padding from figures --*/
+}
+img {
+  width: 100%;  /*-- makes all images responsive --*/
+}
+a {
+  color:blue;  /*-- sets all link colors --*/
+}
+a:hover, a:visited {
+  color:purple;  /*-- sets all links colors when hover or visited --*/
+}
+nav {
+  border: 1px solid #333;  /*-- adds a border to nav --*/
+  margin-bottom: 4em;  /*-- adds big bottom margin --*/
+  padding: .5em 0;  /*-- adds a little top and bottom padding --*/
+}
+nav::after {  /*-- standard clearfix after containing element --*/
+  content: "";
+  clear: both;
+  display: table;
+}
+nav ul {
+  list-style: none; /*-- hides bullets on list item children --*/
+  display: inline-block;  /*-- displays both lists side-by-side --*/
+  padding-left: 0;  /*-- removes left padding --*/
+}
+nav ul li {
+  display: inline-block; /*-- makes both lists horizontal --*/
+  padding-left: 1em;  /*-- spaces out list items from each other --*/
+}
+.menu {
+  margin-left: 1em;  /*-- gives a little space to the left of the .menu --*/
+}
+.social-links {
+  float: right;  /*-- "floats" social menu to the right --*/
+  margin-right: 1em;  /*-- stops menu from touching right side --*/
+}
+.hero {
+  margin: 0 0 4em 0;  /*-- adds big space below the border --*/
+  padding: 0 0 1em 0;  /*-- adds small space above the border --*/
+  border-bottom: 1px solid #ccc;  /*-- draws a bottom border --*/
+}
+.hero::after { /*-- standard clearfix after containing element --*/
+  content: "";
+  clear: both;
+  display: table;
+}
+#hero-text {
+  width: 50%; /*-- sets container to take up half the body --*/
+  float: left;  /*-- "floats" the container left  --*/
+  padding-right: 1em;  /*-- creates space on container's right --*/
+}
+#hero-image {
+  width: 50%;  /*-- sets container to take up other half --*/
+  float: left;  /*-- "floats" this container left --*/
+}
+#hero-image::after {  /*-- standard clearfix --*/
+  content: "";
+  clear: both;
+  display: table;
+}
+main::after {  /*-- standard clearfix --*/
+  content: "";
+  clear: both;
+  display: table;
+}
+.reverse-block {
+  background-color: #ccc;  /*-- sets container's background color --*/
+  text-align: center;  /*-- aligns the text center --*/
+  padding: .5em;  /*-- puts a little internal space around text --*/
+}
+article {
+  width: 70%;  /*-- sets the container width to 70% of body --*/
+  float: left;  /*-- floats the container left --*/
+  padding-right: 1em;  /*-- creates space to the container's right --*/
+}
+aside {
+  width: 30%;  /*-- sets container's width to the other 30%  --*/
+  float: left;  /*-- floats this container left --*/
+  background-color: #eaeaea;  /*-- sets container background color --*/
+  padding: .5em;  /*-- adds a little space inside the container  --*/
+}
+footer {
+  margin-top: 4em;  /*-- adds big space above the footer --*/
+  border: 1px solid #333;  /*-- adds border around footer --*/
+  text-align: center;  /*-- centers text in the footer --*/
+}
